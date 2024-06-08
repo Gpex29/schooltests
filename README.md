@@ -1,0 +1,1 @@
+Mad Soft's test task
