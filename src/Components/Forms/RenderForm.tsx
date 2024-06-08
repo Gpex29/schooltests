@@ -1,6 +1,7 @@
 import getForm from '.';
+import { QuestionComponents } from '.';
 
-const RenderForm = (type) => {
+const RenderForm = (type: keyof QuestionComponents) => {
   const Component = getForm(type);
   return <Component />;
 };

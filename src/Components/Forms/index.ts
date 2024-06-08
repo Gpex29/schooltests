@@ -3,7 +3,8 @@ import MultiplyChoiceForm from './MultiplyChoiceForm';
 import ShortChoiceForm from './ShortChoiseForm';
 import SingleChoiceForm from './SingleChoiceForm';
 
-interface QuestionComponents {
+
+export interface QuestionComponents {
   'single choice': typeof SingleChoiceForm;
   'multiple choice': typeof MultiplyChoiceForm;
   'short answer': typeof ShortChoiceForm;
