@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { create } from 'zustand';
-import { persist, createJSONStorage, PersistOptions } from 'zustand/middleware';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import data from '../../fakeData.json';
 
 const useStore = create(
   persist(
-    (set, get: () => Partial<PersistOptions>) => ({
+    (set, get: () => any) => ({
       data,
       currentQuestion: 1,
       answers: [],
